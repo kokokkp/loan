@@ -1,0 +1,159 @@
+<html>
+    <head>
+        <title>co</title>
+        <style>
+            .switch {
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background-color: #ca2222;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2ab934;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(55px);
+  -ms-transform: translateX(55px);
+  transform: translateX(55px);
+}
+.Yes
+{
+  display: none;
+}
+
+.Yes, .No
+{
+  color: white;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+}
+input:checked+ .slider .Yes
+{display: block;}
+
+input:checked + .slider .No
+{display: none;}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;}
+
+  .hero{
+      height:100%;
+      width:100%;
+      background-image:url("lightblue.png");
+      background-position: center;
+      background-size: cover;
+      position:absolute;
+
+  }
+  .form-box{
+    width: 380px;
+    height: 520px;
+    position: relative;
+    margin:6% auto;
+    background: #fff;
+    padding:5px;
+  }
+  .btn{
+	margin-left:50%;
+	transform: translateX(-50%);
+	width: 160px;
+	height: 30px;
+	border: none;
+	outline: none;
+	background: greenyellow;
+	cursor: pointer;
+	font-size: 16px;
+	text-transform: uppercase;
+	color: white;
+	border-radius: 4px;
+	transistion: .3s;
+	margin:50px;
+  float:right;
+		}
+    .sai{
+      padding:5px;
+    }
+
+        </style>
+    </head>
+    <body>
+        
+           <div class="Hero">
+            <div class="form-box">
+              <center><h3>Co-Borrower</h3></center>
+        <hr/>
+       
+        Are you applying with a co-borrower?&nbsp;&nbsp;
+        <label class="switch">
+            <input type="checkbox" id="togBtn">
+            <div class="slider round">
+             <!--ADDED HTML -->
+             <span class="Yes">Yes</span>
+             <span class="No">No</span>
+             <!--END-->
+            </div>
+            
+           </label><br/>
+           <br/>
+           <br/>
+        
+           <label>Name of the co-borrower</label><br/><br/>
+        <input class="sai" type="text" name="txtname" placeholder="Name of the co-borrower" size="40" />
+        <br/>
+        <br/>
+        <label>Age of co-borrower</label><br/><br/>
+        <input class="sai"  type="number" name="age" placeholder="Age" size="200"/>
+        <br/>
+        <br/>
+        <label>Annual Income of co-borrower</label><br/><br/>
+        <input class="sai" type="number" name="AI" placeholder="Annual Income in lakhs" size="200"/><br/>
+        <br/>
+        <a href="7.html"><input type="Button"  class="btn" name="Login" value="Continue->" size="40"/></a>
+            </div>
+          
+        </div>
+        
+        
+
+       
+    </body>
+   
+</html>

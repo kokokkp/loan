@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>loan goals</title>
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+}
+.hero{
+    height:100%;
+    width:100%;
+    background-image:url('lightblue.png');
+    background-position:center;
+    background-size: cover;
+    position:absolute;
+}
+.form-box {
+    width:380px;
+    height:480px;
+    position:relative;
+    margin:6% auto;
+    background-color: rgba(0,0,0.5);
+    border-radius:10px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    background:#fff;
+    padding: 5px;
+}
+.states{
+    width:90%;
+    height:20px;
+    position:absolute;
+}
+</style>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <center>
+            <h2>Your Loan Goals</h2><br>
+            <p>Tell us about the property you're loooking for</p><br><br></center>
+            <p>In which state are you looking to buy?</p>
+            <select name="states" id="states">
+                <option value="Select an option">select an option</option>
+                <option value="Andhra pradesh">Andhra pradesh</option>
+                <option value="Arunachal pradesh">Arunachal pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya pradesh">Madhya pradesh</option>
+                <option value="Maharastra">Maharastra</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Uttar pradesh">Uttar pradesh</option>
+                <option value="West Bengal">West Bengal</option>
+            </select><br><br>
+            <p>City</p>
+            <select input type="city" id="city" name="city">
+                <option value="select an option">select an option</option>
+                <option value="Mysore">Mysore</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Hydrabad">Hydrabad</option>
+                <option value="Gandhinagar">Gandhinagar</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+            </select><br><br>
+            <p>Purchase price</p>
+            <input type="purchase price" id="purchase price" name="purchase price"><br><br>
+            <p>Down payment in percentage</p>
+            <input type="percentage" id="percentage" name="percentage"><br><br>
+            <p>Desired Loan Amount</p>
+            <input type="loan amount" id="loan amount" name="loan amount"><br><br>
+            <center>
+                <input type="button" value="Continue" style="background-color:greenyellow;border:1px; padding:10px; text-align: center;">
+            </center>
+        </div>
+    </div>
+</body>
+</html>
